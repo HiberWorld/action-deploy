@@ -1,0 +1,19 @@
+name: "hbr-deploy"
+description: Aws cli + argocd
+author: Hiber AB
+inputs:
+  argocd_url:
+    description: argocd url
+    require: true
+  username:
+    description: argocd username
+    require: true
+  password:
+    description: argocd password
+    require: true
+branding:
+  color: "blue"
+  icon: "download"
+runs:
+  using: "docker"
+  image: "Dockerfile"
